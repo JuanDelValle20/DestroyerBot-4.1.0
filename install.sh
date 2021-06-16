@@ -12,5 +12,6 @@ apt-get install wget -y
 apt-get install tesseract -y
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 npm install
+conn.version = [2, 2119, 6]
 
 echo "[*] All dependencies have been installed, please run the command \"npm start\" to immediately start the script"
