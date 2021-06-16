@@ -2,7 +2,7 @@
 const { 
 	WAConnection,
 	MessageType
-} = require('@adiwajshing/baileys')
+} = require('@pedroslopez/whatsapp-web.js')
 const fs = require('fs')
 const { image } = MessageType
 const msgHdlr = require('./msghdlr')
