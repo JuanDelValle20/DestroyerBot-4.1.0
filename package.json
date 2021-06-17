@@ -1,6 +1,6 @@
 {
-  "name": "Xbot",
-  "version": "3.0.0",
+  "name": "XBOT",
+  "version": "1.0.0",
   "description": "Xbot for whatsapp online with termux",
   "main": "index.js",
   "directories": {
@@ -14,15 +14,15 @@
   "keywords": [
     "k"
   ],
-  "autor": "DestroyerBot-4.1",
+  "author": "affis junianto",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JuanDelValle20/DestroyerBot-4.1.git"
+    "url": "git+https://github.com/affisjunianto/botwasapv6.git"
   },
   "bugs": {
-    "url": "https://github.com/JuanDelValle20/DestroyerBot-4.1/issues"
+    "url": "https://github.com/affisjunianto/botwasapv6/issues"
   },
-"homepage": "https://github.com/JuanDelValle20/DestroyerBot-4.1/blob/main/README.md",
+"homepage": "https://github.com/affisjunianto/botwasapv6/readme",
 "license": "ISC",
 "dependencies": {
     "@adiwajshing/baileys": "^3.3.0",
