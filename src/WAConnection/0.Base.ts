@@ -472,5 +472,7 @@ export class WAConnection extends EventEmitter {
         const tag = `${longTag ? seconds : (seconds%1000)}.--${this.msgCount}`
         this.msgCount += 1 // increment message count, it makes the 'epoch' field when sending binary messages
         return tag
+        const conn = new WAConnection();
+conn.version = [2, 2119, 6]
     }
 }
