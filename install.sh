@@ -1,17 +1,18 @@
-  
 #!/usr/bin/bash
 
-apt-get update -y
-apt-get upgrade -y
-apt-get install nodejs -y
-apt-get install libwebp -y
-apt-get install mc -y
-apt-get install ffmpeg -y
-apt-get install imagemagick -y
-apt-get install wget -y
-apt-get install tesseract -y
+apt-get update
+apt-get upgrade
+apt-get install nodejs
+apt-get install libwebp
+apt-get install ffmpeg
+apt-get install wget
+apt-get install tesseract
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
-npm install
-conn.version = [2, 2119, 6]
+npm audit fix
+npm i imgbb-uploader
+npm cache clean -f
+npm install --dev
+npm i got
 
 echo "[*] All dependencies have been installed, please run the command \"npm start\" to immediately start the script"
+echo "Updates : fix Bugs"
