@@ -16,8 +16,6 @@ const wibu = (prefix, ownerBot, botName) => {
   │
   ├─ ❏ ${prefix}neonime
   ├─ ❏ ${prefix}pokemon
-  ├─ ❏ ${prefix}loli
-  ├─ ❏ ${prefix}waifu
   ├─ ❏ ${prefix}randomanime
   ├─ ❏ ${prefix}husbu
   ├─ ❏ ${prefix}husbu2
