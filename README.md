@@ -11,9 +11,6 @@
 <a href="https://github.com/JuandelValle20"><img title="Creador" src="https://img.shields.io/badge/Author-JuandelValle20-purple.svg?style=for-the-badge&logo=github"></a>
 </p>
 
-<p align="center">
-  <a href="https://www.youtube.com/channel/UCbNOLyHAy-SL4D9iz9Oi0lw"><img src="https://img.shields.io/badge/YouTube-thepavos-ff0000?style=for-the-badge&logo=youtube&logoColor=ff0000&lihttps://youtu.be/n9fUrhPf5-8-8" /></a>
-  <a name=hendra759&label=VIEWS&style=flat-square&color=orange" />
 
 <p align="center">
 Mis Redes Sociales Y Mi Whatsapp Para Resolver Tus Problemas
