@@ -46,7 +46,6 @@ const speed = require('performance-now')
 
 /******COMIENZO DE LA ENTRADA JSON******/
 const welkom = JSON.parse(fs.readFileSync('./database/json/welkom.json'))
-const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./database/json/simi.json'))
 const user = JSON.parse(fs.readFileSync('./database/json/user.json'))
 const _leveling = JSON.parse(fs.readFileSync('./database/json/leveling.json'))
@@ -58,7 +57,6 @@ const { help } = require('./src/help')
 const { logomaker } = require('./database/menu/logomaker')
 const { toinmenu } = require('./src/toinmenu')
 const { menuadmin } = require('./src/menuadmin')
-const { nsfwmenu } = require('./src/nsfwmenu')
 const { desmenu } = require('./src/desmenu')
 const { version } = require('./src/version')
 const { shantera } = require('./src/shantera')
@@ -333,7 +331,6 @@ async function starts() {
 			const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 			const isGroupAdmins = groupAdmins.includes(sender) || false
 			const isWelkom = isGroup ? welkom.includes(from) : false
-			const isNsfw = isGroup ? nsfw.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
