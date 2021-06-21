@@ -1,6 +1,6 @@
 {
-  "name": "shanbot",
-  "version": "0.0.2",
+  "name": "DestroyerBot",
+  "version": "4.1.0",
   "description": "Only termux",
   "main": "index.js",
   "directories": {
@@ -17,7 +17,7 @@
     "whatsapp",
     "bot"
   ],
-  "author": "Shan",
+  "author": "Juan",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.0",
@@ -27,7 +27,6 @@
     "cfonts": "^2.9.0",
     "fake-useragent": "^1.0.1",
     "fluent-ffmpeg": "^2.1.2",
-    "lolis.life": "^4.0.0",
     "moment-timezone": "^0.5.32",
     "multistream": "^4.0.1",
     "node-fetch": "^2.6.1",
