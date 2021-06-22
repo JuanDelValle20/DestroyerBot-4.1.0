@@ -640,7 +640,7 @@ async function starts() {
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 JuandelValle 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 Juan del Valle *DICE:* 」*\n\n${body.slice(4)}`)
 						}
 						reply('Transmisión exitosa')
 					}
@@ -692,14 +692,14 @@ async function starts() {
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Marca al que vamos a funar')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Pedido recibido, *HAKAI* 🖐 :\n'
+						teks = '_Antes de la creación, viene la destrucción_ ... *HAKAI* :\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
 						}
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions(`Pedido recibido, *HAKAI* 🖐 : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						mentions(`_Antes de la creación, viene la destrucción_ ... *HAKAI* 🖐 : @${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupRemove(from, mentioned)
 					client.sendMessage(mentioned, 'Le faltaba odio', text)
 					}
@@ -723,7 +723,7 @@ async function starts() {
                                      if (!isUser) return reply(mess.only.registroB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					linkgc = await client.groupInviteCode (from)
-					yeh = `Aqui esta el link del grupo 🤑\n\nhttps://chat.whatsapp.com/${linkgc}\n\nLink Del Grupo *${groupName}*`
+					yeh = `Aquí está el link del grupo 🤑: \n\nhttps://chat.whatsapp.com/${linkgc}\n\n Link Del Grupo *${groupName}*`
 					client.sendMessage(from, yeh, text, {quoted: mek, detectLinks: false})
 					break
                 case 'qrcode':
@@ -816,7 +816,7 @@ async function starts() {
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`[❗] Fallo, al momento de convertir ${tipe} al sticker`)
+								reply(`[❗] Falló, al momento de convertir ${tipe} al sticker`)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -890,22 +890,22 @@ async function starts() {
 					var nombre = reg.split("|")[0];
                                                 user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: Destructor(a) #??/02/2021 🤙🤪\`\`\`\n\n\`\`\`Hora 🇪🇨: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: Destructor(a) #??/02/2021 🤙🤪\`\`\`\n\n\`\`\`Hora GT: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
 					break
                                 case 'welcome':
 					if (!isGroup) return reply(mess.only.group)
                                         if (!isUser) return reply(mess.only.registroB)
 					if (!isGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('Para activar está funcion coloca *welcome 1')
+					if (args.length < 1) return reply('Para activar esta función coloca *welcome 1')
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('Ya esta activada!!!')
+						if (isWelkom) return reply('Ya está activada!!!')
 						welkom.push(from)
 						fs.writeFileSync('./database/json/welkom.json', JSON.stringify(welkom))
-						reply('❬ ✅ ❭ La funcion de bienvenida esta habilitada en este grupo')
+						reply('❬ ✅ ❭ La función de bienvenida está habilitada en este grupo')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./database/json/welkom.json', JSON.stringify(welkom))
-						reply('❬ ✅ ❭ La funcion de bienvenida esta deshabilitada en este grupo')
+						reply('❬ ✅ ❭ La función de bienvenida está deshabilitada en este grupo')
 					} else {
 						reply('Escribe el comando 1 para activarlo y 0 para desactivarlo Ejemplo: *welcome 1')
 					}
@@ -996,7 +996,7 @@ async function starts() {
 					break
                 default:
 		if (budy.includes(`todo bien`)) {
-                  reply(`Si amigo todo, bien pk`)
+                  reply(`Si amigo todo, bien ok :v`)
                   }
 
 		if (budy.includes(`buenos dias`)) {
@@ -1007,12 +1007,12 @@ async function starts() {
                   reply(`Miren a este fan de Boku no Pico`)
                   }
 
-		if (budy.includes(`gracias`)) {
+		if (budy.includes(`gracias bot`)) {
                   reply(`De nada mortal`)
                   }
 
 		if (budy.includes(`hola`)) {
-                  reply(`hola?...¿Quieres algo?`)
+                  reply(`hola...¿Quieres algo?`)
                   }
                  
 		if (budy.includes(`fua`)) {
