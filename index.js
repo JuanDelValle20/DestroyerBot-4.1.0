@@ -1021,7 +1021,7 @@ async function starts() {
                   reply(`el diegote pa`)
                   }
 		if (budy.includes(`infoBot`)) {
-				  reply(`La base de este bot es una creación de *Shanduy*, JuandelValle solo modificó y adaptó los mensajes para lod grupos al que el bot pertenece`)
+				  reply(`La base de este bot es una creación de *Shanduy*, JuandelValle solo modificó y adaptó los mensajes para los grupos a los que el bot pertenece`)
 				  }				  
 				if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
