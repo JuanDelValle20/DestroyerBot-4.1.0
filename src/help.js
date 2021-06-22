@@ -61,7 +61,7 @@ Registrate con el comando ${prefix}registro y tu nombre
   ╠ Cerrar el grupo solo admins
   ╠ ○ ${prefix}opengc
   ╠ Abrir grupo solo admins
-  ╠ ○ ${prefix}kick o pafuera
+  ╠ ○ ${prefix}kick o hakai
   ╠ Eliminar a un miembro 
   ╠ ○ ${prefix}promote
   ╠ Dar admin a un miembro
