@@ -1,8 +1,10 @@
  /*
-* DestroyerBot es una creación de JuandelValle
-* DestroyerBot no tiene ningun fin de lucro
-* JuandelValle se reserva todos los derechos de autor
-* © 2021 JuandelValle, INC.
+* DestroyerBot es una modificación creada por JuandelValle
+*DestroyerBot no tiene ningun fin de lucro
+*JuandelValle se reserva todos los derechos de autor de esta modificación del bot
+
+
+*       *CREADOR:*  Shanduy
 
 Cualquier copia que utilize mi ApiKey sera dado de baja
 
