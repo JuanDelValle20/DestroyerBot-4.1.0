@@ -428,7 +428,7 @@ async function starts() {
 		case 'idioma':
 		client.sendMessage(from, bahasa(prefix, sender), text, {quoted: mek})
 		break
-		case 'Destroymenu':
+		case 'toinymenu':
 		client.sendMessage(from, toinmenu(prefix, sender), text, {quoted: mek})
 		break
 		case 'menuadmin':
@@ -492,7 +492,7 @@ async function starts() {
 				  case 'wame':
   client.updatePresence(from, Presence.composing) 
       options = {
-          text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}\n\nSu link de Whatsapp : *https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n*O ( / )*\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
+          text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}\n\n Su link de Whatsapp : *https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n*O ( / )*\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
           contextInfo: { mentionedJid: [sender] }
     }
     client.sendMessage(from, options, text, { quoted: mek } )
@@ -509,7 +509,7 @@ async function starts() {
 	    case 'owner':
                 case 'creator':
                 client.sendMessage(from, {displayname: "Juan", vcard: vcard}, MessageType.contact, { quoted: mek})
-		client.sendMessage(from, 'Arriba está el número del creador del bot <DestroyerBot>\n\nNO SOY UN BOT 🥸\n\nAhi puedes resolver tus preguntas y errores :)\n\nEste no es el numero del propietario del bot que estas usando, si no del creador de la base de datos del bot❗\n\nby JuandelValle',MessageType.text, { quoted: mek} )
+		client.sendMessage(from, 'Arriba está el número del creador del bot <DestroyerBot>\n\nNO SOY UN BOT 🥸\n\nAhi puedes resolver tus preguntas y errores :)\n\nEste no es el número del propietario del bot que estas usando, si no del creador de la base de datos del bot❗\n\nby JuandelValle',MessageType.text, { quoted: mek} )
                 const none = fs.readFileSync('./mp3/Destroyer.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                 break
@@ -532,19 +532,19 @@ async function starts() {
               await client.sendMessage(from, options, text)
                break
                		       case 'ytmp3':
-					if (args.length < 1) return reply('Donde esta la URL?')
+					if (args.length < 1) return reply('Dónde esta la URL?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					reply(mess.only.mpa)
 					anu = await fetchJson(`https://st4rz.herokuapp.com/api/yta2?url=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*DESCARGA EXITOSA ✅*\n◉ *Título* : ${anu.title}\n\nDALE DESTRUCTOR(A) NO SPAMES TE ESTOY ENVIANDO EL AUDIO ESPéRAME 😡`
+					teks = `*DESCARGA EXITOSA ✅*\n◉ *Título* : ${anu.title}\n\nDALE DESTRUCTOR(A) NO SPAMES TE ESTOY ENVIANDO EL AUDIO ESPÉRAME 😡`
 					thumb = await getBuffer(anu.thumb)
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
 					break
 				case 'ytmp4':
-					if (args.length < 1) return reply('Donde esta la URL?')
+					if (args.length < 1) return reply('Dónde esta la URL?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					reply(mess.only.mpv)
 					anu = await fetchJson(`https://st4rz.herokuapp.com/api/ytv2?url=${args[0]}`, {method: 'get'})
@@ -557,7 +557,7 @@ async function starts() {
 					break
                                  case 'tts':
 				   client.updatePresence(from, Presence.recording) 
-				   if (args.length < 1) return client.sendMessage(from, 'Cual es el código de idioma?\n\nPara saber el codigo de idioma coloque el comando ${prefix}idioma', text, {quoted: mek})
+				   if (args.length < 1) return client.sendMessage(from, 'Cuál es el código de idioma?\n\nPara saber el codigo de idioma coloque el comando ${prefix}idioma', text, {quoted: mek})
                                    if (!isUser) return reply(mess.only.registroB)
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Y el texto?', text, {quoted: mek})
@@ -689,7 +689,7 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Marca al que vamos a funar')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Etiqueta al usuario que vamos a *DESTRUIR*')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						teks = '_Antes de la creación, viene la destrucción_ ... *HAKAI* :\n'
