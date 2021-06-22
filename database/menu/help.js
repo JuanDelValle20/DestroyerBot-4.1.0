@@ -42,6 +42,10 @@ const help = (prefix, ownerBot, botName) => {
   ├─ ❏ ${prefix}qrcode
   ├─ ❏ ${prefix}timer
   ├─ ❏ ${prefix}fml
-  └─ ❏ ${prefix}fml2`
+  └─ ❏ ${prefix}fml2
+
+  ⌜ *Esto es solo el comienzo de una era totalmente nueva UwU* ⌟ 
+  ⌜ *Shanduy es el creador de la base de este bot, JuandelValle es el que modificó la base para adaptarla a los grupos donde pertenece* ⌟
+`
 }
 exports.help = help
