@@ -8,6 +8,7 @@ const shantera = (prefix, pushname) => {
 - gracias
 - hola
 - fua
+- infoBot
 
 
 
