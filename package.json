@@ -1,5 +1,5 @@
 {
-  "name": "DestroyerBot",
+  "name": "ShanBot",
   "version": "4.1.0",
   "description": "Only termux",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "whatsapp",
     "bot"
   ],
-  "author": "Juan",
+  "author": "Shan",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.0",
