@@ -79,6 +79,7 @@ Para usar estas funciones el bot necesita admin
 by JuandelValle
 
 ⌜ *Esto es solo el comienzo de una era totalmente nueva UwU* ⌟ 
+⌜ *Shanduy es el creador de la base de este bot, JuandelValle es el que modificó la base para adaptarla a los grupos donde pertenece* ⌟ 
 `
 }
 
