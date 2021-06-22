@@ -10,14 +10,6 @@
 </p>
 
 
-<p align="center">
-Mis Redes Sociales Y Mi Whatsapp Para Resolver Tus Problemas
-</p>
-
-<p align='center'>
-   <a href="https://wa.me/50241033780"><img height="30" src="https://github.com/JuanDelValle20/DestroyerBot-4.1.0/blob/main/temples/d9d97d48264770f85d35c208f279152c.png?raw=true"></a>
-</P>
-
 
 
 # DestroyerBot-4.1.0
