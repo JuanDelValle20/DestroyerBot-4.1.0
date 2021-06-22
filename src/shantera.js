@@ -5,7 +5,7 @@ const shantera = (prefix, pushname) => {
 - todo bien
 - buenos dias
 - bot malo
-- gracias
+- gracias bot
 - hola
 - fua
 - infoBot
