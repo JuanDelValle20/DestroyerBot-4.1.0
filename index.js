@@ -642,7 +642,7 @@ async function starts() {
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 Juan del Valle *DICE:* 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 Juan del Valle _DICE:_ 」*\n\n${body.slice(4)}`)
 						}
 						reply('Transmisión exitosa')
 					}
