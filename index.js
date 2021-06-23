@@ -997,8 +997,8 @@ async function starts() {
 					})
 					break
                 default:
-		if (budy.includes(`todo bien`)) {
-                  reply(`Si amigo todo, bien ok :v`)
+		if (budy.includes(`todo bien bot`)) {
+                  reply(`Si amigo todo bien, ok :v`)
                   }
 
 		if (budy.includes(`buenos dias`)) {
@@ -1030,6 +1030,22 @@ async function starts() {
 		if (budy.includes(`El bot habla, el bot habla`)) {
 				  reply(`Ammmm... No?`)
 				  }
+		if (budy.includes(`qué hay bot`)) {
+				  reply(`lo mismo de siempre mortal`)
+				  }
+		if (budy.includes(`como funciona el bot`)) {
+				  reply(`No lo entenderías si te lo dijera`)
+				  }
+		if (budy.includes(`me salió shiny`)) {
+				  reply(`Te salió un caramelo*`)
+				  }
+		if (budy.includes(`ya están los nidos`)) {
+				  reply(`Escribe "@nidos" y averígualo`)
+				  }
+		if (budy.includes(`nidos de arceus`)) {
+				  reply(`🤡, Todo bien en casa amigo?`)
+				  }	
+			  				  
 
 				if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
