@@ -1020,9 +1020,17 @@ async function starts() {
 		if (budy.includes(`fua`)) {
                   reply(`el diegote pa`)
                   }
+
 		if (budy.includes(`infoBot`)) {
 				  reply(`La base de este bot es una creación de *Shanduy*, JuandelValle solo modificó y adaptó los mensajes para los grupos a los que el bot pertenece`)
-				  }				  
+				  }			
+		if (budy.includes(`saca las caguamas`)) {
+				  reply(`Qué marca? y cuántas?`)
+			      }
+		if (budy.includes(`El bot habla, el bot habla`)) {
+				  reply(`Ammmm... No?`)
+				  }
+
 				if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
 						muehe = await simih(budy)
