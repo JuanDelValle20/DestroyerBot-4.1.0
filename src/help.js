@@ -5,7 +5,7 @@ const help = (prefix) => {
 
 ◉ *INFORMACION*
    ○ Comando: ⌜ ${prefix} ⌟
-   ○ Creador: JuandelValle™ 
+   ○ Editor: JuandelValle™ 
 
 
 ◉ *NUEVO COMANDO*
@@ -25,7 +25,7 @@ Registrate con el comando ${prefix}registro y tu nombre
 
 ◉ *RESUELVE TUS DUDAS*
   ║
-  ╠ ○ ${prefix}creador
+  ╠ ○ ${prefix}Editor
   ╚ Dudas o problemas aqui
 
 ◉ *CREAR STICKERS*
