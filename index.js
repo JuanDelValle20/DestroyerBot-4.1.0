@@ -1009,11 +1009,11 @@ async function starts() {
                   reply(`Si amigo todo bien, ok :v`)
                   }
 
-		if (budy.includes(`buenos dias`)) {
+		if (budy.includes(`buenos dias`,`Buenos dias`,`buenos días`,`Buenos días`)) {
                   reply(`Buenos Dias simples mortales`)
                   }
 
-		if (budy.includes(`bot malo`)) {
+		if (budy.includes(`bot malo`,`Bot malo`)) {
                   reply(`Miren a este fan de Boku no Pico`)
                   }
 
@@ -1021,7 +1021,7 @@ async function starts() {
                   reply(`De nada mortal`)
                   }
 
-		if (budy.includes(`hola`)) {
+		if (budy.includes(`hola`,`ola`,`Ola`,`Hola`)) {
                   reply(`hola...¿Quieres algo?`)
                   }
                  
@@ -1032,29 +1032,29 @@ async function starts() {
 		if (budy.includes(`infoBot`)) {
 				  reply(`La base de este bot es una creación de *Shanduy*, JuandelValle solo modificó y adaptó los mensajes para los grupos a los que el bot pertenece`)
 				  }			
-		if (budy.includes(`saca las caguamas`)) {
+		if (budy.includes(`saca las caguamas`,`Saca las caguamas`)) {
 				  reply(`Qué marca? y cuántas?`)
 			      }
-		if (budy.includes(`el bot habla`)) {
+		if (budy.includes(`el bot habla`,`El bot habla`)) {
 				  reply(`Ammmm... No?`)
 				  }
-		if (budy.includes(`que hay bot`)) {
+		if (budy.includes(`que hay bot`,`qué hay bot`)) {
 				  reply(`lo mismo de siempre mortal`)
 				  }
 		if (budy.includes(`como funciona el bot`)) {
 				  reply(`No lo entenderías si te lo dijera`)
 				  }
-		if (budy.includes(`me salio shiny`)) {
+		if (budy.includes(`me salio shiny`,`Me salió shiny`)) {
 				  reply(`Te salió un caramelo*`)
 				  }
-		if (budy.includes(`ya estan los nidos`)) {
+		if (budy.includes(`ya estan los nidos`,`Ya están los nidos`)) {
 				  reply(`Escribe "@nidos" y averígualo`)
 				  }
-		if (budy.includes(`nidos de arceus`)) {
+		if (budy.includes(`nidos de arceus`,`Nidos de arceus`,`Nidos de Arceus`)) {
 				  reply(`🤡, Todo bien en casa amigo?`)
 				  }	
-		if (budy.includes(`nidos de arceus`)) {
-				  reply(`🤡, Todo bien en casa amigo?`)
+		if (budy.includes(`buenas noches`,`Buenas noches`)) {
+				  reply(`Ya te irás a dormir?; Al fin!!!; Ahora se va a poner entretenido el chat del grupo`)
 				  }	
 			  				  
 
