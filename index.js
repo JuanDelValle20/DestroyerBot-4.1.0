@@ -996,6 +996,15 @@ async function starts() {
 						fs.unlinkSync(rano)
 					})
 					break
+					case 'slap':
+						kapankah = body.slice(1)
+						if (isLimit(sender)) return reply(ind.limitend(pusname))
+						const slap =['perr@','te hablo a ti cerdo','de inocente no tienes nada','eres tont@ o te haces','te ves como un/a mon@','la pasarás solter@ el resto de tu vida UwU','así que quieres tener un/a novi@, ya te has visto en un espejo?','No eres gracios@ y eres fe@, vaya combinación para estar sol@ por el resto de tu vida','Vaya que no estamos cerca, si ni te soporto en digital, ni me imagino de lo que será en vida real','Eres un fan de YoloTroll','Siento que estás llorando','Sé que tus padres no te lo han dicho pero, ERES ADOPTADO','Woody ya está orgulloso de ti puesto que por fin entendiste que solo eres un juguete','Las únicas mujeres que te han besado son tu madre, abuela y demás familiares','Eres hermoso baby, en este instante se dicen cosas opuestas a la realidad','Eres adoptad@','De seguro te gustó Boku no Pico','Si te miras al espejo, talvez te asustes tú mismo','Ni los fantasmas se sienten tranquilos con tenerte en la misma casa','Enfrente de ti hay una silla con un pastel :3','Acéptalo, te gustan los trapitos','*PODRÁS SER:* feo, inseguro, con temor al rechazo, tímido, sin amigos, muy feo, realmente aburrido','Lo siento, me asusté al ver tu foto de perfil']
+						const ple = slap[Math.floor(Math.random() * slap.length)]
+						pod = await getBuffer(`https://media.giphy.com/media/S8507sBJm1598XnsgD/source.gif`)
+						client.sendMessage(from, pod, image, { quoted: mek, caption: '*Tóxico*\n\n'+ ple })
+						await limitAdd(sender)
+					break			
                 default:
 		if (budy.includes(`todo bien bot`)) {
                   reply(`Si amigo todo bien, ok :v`)
