@@ -892,7 +892,7 @@ async function starts() {
 					var nombre = reg.split("|")[0];
                                                 user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: Destructor(a) #??/02/2021 🤙🤪\`\`\`\n\n\`\`\`Hora 🇬🇹 : ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]:${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuarios ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: Destructor(a) # ${user.length} 🤙🤪\`\`\`\n\n\`\`\`Hora 🇬🇹 : ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]:${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`\nTotal de usuarios ${user.length}\`\`\``, text, {quoted: mek})
 					break
                                 case 'welcome':
 					if (!isGroup) return reply(mess.only.group)
@@ -997,13 +997,12 @@ async function starts() {
 					})
 					break
 					case 'slap':
-						kapankah = body.slice(1)
-						if (isLimit(sender)) return reply(ind.limitend(pusname))
+						when = budy.slice(1)
+						if (args.length < 1) return reply(mess.only.userB)
 						const slap =['perr@','te hablo a ti cerdo','de inocente no tienes nada','eres tont@ o te haces','te ves como un/a mon@','la pasarás solter@ el resto de tu vida UwU','así que quieres tener un/a novi@, ya te has visto en un espejo?','No eres gracios@ y eres fe@, vaya combinación para estar sol@ por el resto de tu vida','Vaya que no estamos cerca, si ni te soporto en digital, ni me imagino de lo que será en vida real','Eres un fan de YoloTroll','Siento que estás llorando','Sé que tus padres no te lo han dicho pero, ERES ADOPTADO','Woody ya está orgulloso de ti puesto que por fin entendiste que solo eres un juguete','Las únicas mujeres que te han besado son tu madre, abuela y demás familiares','Eres hermoso baby, en este instante se dicen cosas opuestas a la realidad','Eres adoptad@','De seguro te gustó Boku no Pico','Si te miras al espejo, talvez te asustes tú mismo','Ni los fantasmas se sienten tranquilos con tenerte en la misma casa','Enfrente de ti hay una silla con un pastel :3','Acéptalo, te gustan los trapitos','*PODRÁS SER:* feo, inseguro, con temor al rechazo, tímido, sin amigos, muy feo, realmente aburrido','Lo siento, me asusté al ver tu foto de perfil']
 						const ple = slap[Math.floor(Math.random() * slap.length)]
 						pod = await getBuffer(`https://media.giphy.com/media/S8507sBJm1598XnsgD/source.gif`)
 						client.sendMessage(from, pod, image, { quoted: mek, caption: '*Tóxico*\n\n'+ ple })
-						await limitAdd(sender)
 					break			
                 default:
 		if (budy.includes(`todo bien bot`)) {
@@ -1036,21 +1035,24 @@ async function starts() {
 		if (budy.includes(`saca las caguamas`)) {
 				  reply(`Qué marca? y cuántas?`)
 			      }
-		if (budy.includes(`El bot habla, el bot habla`)) {
+		if (budy.includes(`el bot habla`)) {
 				  reply(`Ammmm... No?`)
 				  }
-		if (budy.includes(`qué hay bot`)) {
+		if (budy.includes(`que hay bot`)) {
 				  reply(`lo mismo de siempre mortal`)
 				  }
 		if (budy.includes(`como funciona el bot`)) {
 				  reply(`No lo entenderías si te lo dijera`)
 				  }
-		if (budy.includes(`me salió shiny`)) {
+		if (budy.includes(`me salio shiny`)) {
 				  reply(`Te salió un caramelo*`)
 				  }
-		if (budy.includes(`ya están los nidos`)) {
+		if (budy.includes(`ya estan los nidos`)) {
 				  reply(`Escribe "@nidos" y averígualo`)
 				  }
+		if (budy.includes(`nidos de arceus`)) {
+				  reply(`🤡, Todo bien en casa amigo?`)
+				  }	
 		if (budy.includes(`nidos de arceus`)) {
 				  reply(`🤡, Todo bien en casa amigo?`)
 				  }	
