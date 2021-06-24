@@ -246,7 +246,7 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `Bienvenid@ @${num.split('@')[0]}\n Ahora eres un Destructor(a)!!!! Bienvenido a *${mdata.subject}* el mejor grupo de Pokémon Go 👉👈\n\nUn gusto conocerte mortal 😀\n\nOjito sigue las reglas del grupo si no, para fuera mortal, los admins te eliminan 🧐\n\nPara utilizar el bot registrate con el comando ${prefix}registro y tu nombre\n\nPara ver los demas comandos utiliza ${prefix}help\n\nOjito con el spam 🧐\n\nby JuandelValle`
+				teks = `Bienvenid@ @${num.split('@')[0]}\n Ahora eres un Destructor(a)!!!! Bienvenido a *${mdata.subject}* el mejor grupo de Pokémon Go 👉👈\n\nUn gusto conocerte mortal 😀\n\nOjito sigue las reglas del grupo si no, para fuera mortal, los admins te eliminan 🧐\n\nPara utilizar el bot registrate con el comando ${prefix}registro y tu nombre\n\nOjito con el spam 🧐\n\nby JuandelValle`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
@@ -311,7 +311,7 @@ async function starts() {
 					mpa: 'Oye Destructor(a) 🥴\n\n*Estoy decargando tu cancion 🔄*\n\nAguarde un momento, por favor\n\nby JuandelValle',
                                         mpv: 'Calmado mortal 😎\n\n*Estoy descargando tu video 🔄*\n\nAguarde un momento, por favor\n\nby JuandelValle',
 					musica: 'Calmado mortal estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube ❗*\n\nby JuandelValle',
-					registroB: `「DESTRUCTOR(A)」\n\nPERO MORTAAAAL!\n\nNo estas registrado en mi base de datos 😳 \n\nComando : ${prefix}registro Nombre\nEjemplo : ${prefix}registro Destroyer`,
+					registroB: `「AVISO」\n\nPERO MORTAAAAL!\n\nNo estas registrado en mi base de datos 😳 \n\nComando : ${prefix}registro Nombre\nEjemplo : ${prefix}registro Destroyer`,
 				}
 			}
     			const apakah = ['Si','No']
@@ -673,7 +673,7 @@ async function starts() {
 					}, 2000)
                      setTimeout( () => {
 					client.updatePresence(from, Presence.composing) 
-					client.sendMessage(from, 'Adiós mortal👋', text) // ur cods
+					client.sendMessage(from, 'Adios mortal👋', text) // ur cods
 					}, 0)
                      break
        /*case 'ownergrup':
@@ -892,7 +892,7 @@ async function starts() {
 					var nombre = reg.split("|")[0];
                                                 user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: Destructor(a) #??/02/2021 🤙🤪\`\`\`\n\n\`\`\`Hora 🇬🇹 : ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]:${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: Destructor(a) #??/02/2021 🤙🤪\`\`\`\n\n\`\`\`Hora 🇬🇹 : ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]:${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuarios ${user.length}\`\`\``, text, {quoted: mek})
 					break
                                 case 'welcome':
 					if (!isGroup) return reply(mess.only.group)
