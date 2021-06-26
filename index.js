@@ -1115,7 +1115,7 @@ async function starts() {
 				  reply(`🤡, Todo bien en casa amigo?`)
 				  }	
 
-		if (budy.includes(`Nidos de arceus`),(`Nidos de Arceus`)) {
+		if (budy.includes(`Nidos de Arceus`)) {
 				  reply(`🤡, Todo bien en casa amigo?`)
 				  }
 
