@@ -1051,7 +1051,7 @@ async function starts() {
                   reply(`De nada mortal`)
                   }
 
-		if (budy.includes(`hola`,`ola`,`Ola`,`Hola`)) {
+		if (budy.includes(`hola`)) {
                   reply(`hola...¿Quieres algo?`)
                   }
 
