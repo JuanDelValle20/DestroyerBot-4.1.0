@@ -1003,20 +1003,50 @@ async function starts() {
 						const ple = slap[Math.floor(Math.random() * slap.length)]
 						pod = await getBuffer(`https://media.giphy.com/media/S8507sBJm1598XnsgD/source.gif`)
 						client.sendMessage(from, pod, image, { quoted: mek, caption: '*Tóxico*\n\n'+ ple })
-					break			
+					break	
+					case 'add':
+						if (!isGroup) return reply(ind.group())
+						if (!isGroupAdmins) return reply(ind.admin())
+						if (!isBotGroupAdmins) return reply(ind.Badmin())
+						if (args.length < 1) return reply('¿A quién quieres agregar, un genio??')
+						if (args[0].startsWith('08')) return reply('Utilice el código de país más')
+						try {
+							num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
+							client.groupAdd(from, [num])
+						} catch (e) {
+							console.log('Error :', e)
+							reply('No se pudo agregar el destino, tal vez porque es privado')
+						}
+					break 		
                 default:
 		if (budy.includes(`todo bien bot`)) {
                   reply(`Si amigo todo bien, ok :v`)
                   }
 
-		if (budy.includes(`buenos dias`,`Buenos dias`,`buenos días`,`Buenos días`)) {
+		if (budy.includes(`buenos días`)) {
                   reply(`Buenos Dias simples mortales`)
                   }
 
-		if (budy.includes(`bot malo`,`Bot malo`)) {
+		if (budy.includes(`Buenos dias`)) {
+				  reply(`Buenos Dias simples mortales`)
+				  }
+
+		if (budy.includes(`buenos días`,`Buenos días`)) {
+				  reply(`Buenos Dias simples mortales`)
+				  }
+
+		if (budy.includes(`Buenos días`)) {
+				  reply(`Buenos Dias simples mortales`)
+				  }
+
+		if (budy.includes(`bot malo`)) {
                   reply(`Miren a este fan de Boku no Pico`)
                   }
 
+		if (budy.includes(`Bot malo`)) {
+			      reply(`Miren a este fan de Boku no Pico`)
+				  }
+  
 		if (budy.includes(`gracias bot`)) {
                   reply(`De nada mortal`)
                   }
@@ -1024,6 +1054,10 @@ async function starts() {
 		if (budy.includes(`hola`,`ola`,`Ola`,`Hola`)) {
                   reply(`hola...¿Quieres algo?`)
                   }
+
+		if (budy.includes(`Hola`)) {
+				  reply(`hola...¿Quieres algo?`)
+				  }
                  
 		if (budy.includes(`fua`)) {
                   reply(`el diegote pa`)
@@ -1031,33 +1065,68 @@ async function starts() {
 
 		if (budy.includes(`infoBot`)) {
 				  reply(`La base de este bot es una creación de *Shanduy*, JuandelValle solo modificó y adaptó los mensajes para los grupos a los que el bot pertenece`)
-				  }			
-		if (budy.includes(`saca las caguamas`,`Saca las caguamas`)) {
+				  }	
+
+		if (budy.includes(`saca las caguamas`)) {
 				  reply(`Qué marca? y cuántas?`)
 			      }
-		if (budy.includes(`el bot habla`,`El bot habla`)) {
+
+		if (budy.includes(`Saca las caguamas`)) {
+				  reply(`Qué marca? y cuántas?`)
+				  }
+
+		if (budy.includes(`el bot habla`)) {
 				  reply(`Ammmm... No?`)
 				  }
-		if (budy.includes(`que hay bot`,`qué hay bot`)) {
+
+		if (budy.includes(`El bot habla`)) {
+				  reply(`Ammmm... No?`)
+				  }
+
+		if (budy.includes(`que hay bot`)) {
 				  reply(`lo mismo de siempre mortal`)
 				  }
+
+		if (budy.includes(`qué hay bot`)) {
+				  reply(`lo mismo de siempre mortal`)
+				  }				  
+
 		if (budy.includes(`como funciona el bot`)) {
 				  reply(`No lo entenderías si te lo dijera`)
 				  }
-		if (budy.includes(`me salio shiny`,`Me salió shiny`)) {
+
+		if (budy.includes(`me salio shiny`)) {
 				  reply(`Te salió un caramelo*`)
 				  }
-		if (budy.includes(`ya estan los nidos`,`Ya están los nidos`)) {
+
+		if (budy.includes(`Me salió shiny`)) {
+				  reply(`Te salió un caramelo*`)
+				  }
+
+		if (budy.includes(`ya estan los nidos`)) {
 				  reply(`Escribe "@nidos" y averígualo`)
 				  }
-		if (budy.includes(`nidos de arceus`,`Nidos de arceus`,`Nidos de Arceus`)) {
+
+		if (budy.includes(`Ya están los nidos`)) {
+				  reply(`Escribe "@nidos" y averígualo`)
+				  }				  
+
+		if (budy.includes(`nidos de arceus`)) {
 				  reply(`🤡, Todo bien en casa amigo?`)
 				  }	
-		if (budy.includes(`buenas noches`,`Buenas noches`)) {
+
+		if (budy.includes(`Nidos de arceus`),(`Nidos de Arceus`)) {
+				  reply(`🤡, Todo bien en casa amigo?`)
+				  }
+
+		if (budy.includes(`buenas noches`)) {
 				  reply(`Ya te irás a dormir?; Al fin!!!; Ahora se va a poner entretenido el chat del grupo`)
 				  }	
-			  				  
 
+		if (budy.includes(`Buenas noches`)) {
+				  reply(`Ya te irás a dormir?; Al fin!!!; Ahora se va a poner entretenido el chat del grupo`)
+				  }				  
+			  				  
 				if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
 						muehe = await simih(budy)
