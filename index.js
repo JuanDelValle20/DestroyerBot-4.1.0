@@ -642,7 +642,7 @@ async function starts() {
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 Juan del Valle _DICE:_ 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 ATENCIÓN _UwU_ 」*\n\n${body.slice(4)}`)
 						}
 						reply('Transmisión exitosa')
 					}
@@ -1024,19 +1024,19 @@ async function starts() {
                   }
 
 		if (budy.includes(`buenos días`)) {
-                  reply(`Buenos Dias simples mortales`)
+                  reply(`Buenos Dias 🐷 fly`)
                   }
 
 		if (budy.includes(`Buenos dias`)) {
-				  reply(`Buenos Dias simples mortales`)
+				  reply(`Buenos Dias 🐷 fly`)
 				  }
 
-		if (budy.includes(`buenos días`,`Buenos días`)) {
-				  reply(`Buenos Dias simples mortales`)
+		if (budy.includes(`buenos dias`)) {
+				  reply(`Buenos Dias 🐷 fly`)
 				  }
 
 		if (budy.includes(`Buenos días`)) {
-				  reply(`Buenos Dias simples mortales`)
+				  reply(`Buenos Dias 🐷 fly`)
 				  }
 
 		if (budy.includes(`bot malo`)) {
@@ -1048,15 +1048,15 @@ async function starts() {
 				  }
   
 		if (budy.includes(`gracias bot`)) {
-                  reply(`De nada mortal`)
+                  reply(`De nada 🐷 fly`)
                   }
 
 		if (budy.includes(`hola`)) {
-                  reply(`hola...¿Quieres algo?`)
+                  reply(`Hola 🐷 fly`)
                   }
 
 		if (budy.includes(`Hola`)) {
-				  reply(`hola...¿Quieres algo?`)
+				  reply(`Hola 🐷 fly`)
 				  }
                  
 		if (budy.includes(`fua`)) {
@@ -1084,11 +1084,11 @@ async function starts() {
 				  }
 
 		if (budy.includes(`que hay bot`)) {
-				  reply(`lo mismo de siempre mortal`)
+				  reply(`lo mismo de siempre 🐷 fly`)
 				  }
 
 		if (budy.includes(`qué hay bot`)) {
-				  reply(`lo mismo de siempre mortal`)
+				  reply(`lo mismo de siempre 🐷 fly`)
 				  }				  
 
 		if (budy.includes(`como funciona el bot`)) {
@@ -1096,11 +1096,11 @@ async function starts() {
 				  }
 
 		if (budy.includes(`me salio shiny`)) {
-				  reply(`Te salió un caramelo*`)
+				  reply(`Flycidades 🐷 fly`)
 				  }
 
 		if (budy.includes(`Me salió shiny`)) {
-				  reply(`Te salió un caramelo*`)
+				  reply(`Flycidades 🐷 fly`)
 				  }
 
 		if (budy.includes(`ya estan los nidos`)) {
@@ -1120,11 +1120,27 @@ async function starts() {
 				  }
 
 		if (budy.includes(`buenas noches`)) {
-				  reply(`Ya te irás a dormir?; Al fin!!!; Ahora se va a poner entretenido el chat del grupo`)
+				  reply(`Buena noche 🐷 fly`)
 				  }	
 
 		if (budy.includes(`Buenas noches`)) {
-				  reply(`Ya te irás a dormir?; Al fin!!!; Ahora se va a poner entretenido el chat del grupo`)
+				  reply(`Buena noche 🐷 fly`)
+				  }		
+
+		if (budy.includes(`fly`)) {
+				  reply(`🐷 fly*`)
+				  }
+
+		if (budy.includes(`Fly`)) {
+				  reply(`🐷 fly*`)
+				  }
+
+		if (budy.includes(`El bot sabe qué número va después del 12`)) {
+				  reply(`*Baka Hentai*`)
+				  }
+
+		if (budy.includes(`El bot sabe que numero va despues del 12`)) {
+				  reply(`*Baka Hentai*`)
 				  }				  
 			  				  
 				if (isGroup && isSimi && budy != undefined) {
