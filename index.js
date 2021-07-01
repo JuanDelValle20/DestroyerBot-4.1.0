@@ -911,23 +911,7 @@ async function starts() {
 					} else {
 						reply('Escribe el comando 1 para activarlo y 0 para desactivarlo Ejemplo: *welcome 1')
 					}
-					break
-				case 'waifu':
-					gatauda = body.slice(7)
-					reply(mess.wait)
-                                        if (!isUser) return reply(mess.only.registroB)
-					anu = await fetchJson(`https://arugaz.my.id/api/nekonime`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image,{quoted: mek})
-					break
-				case 'randomanime':
-					gatauda = body.slice(13)
-					reply(mess.wait)
-                                        if (!isUser) return reply(mess.only.registroB)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=DestroyerBot`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
-					break						
+					break				
                              case 'delete':
 					case 'del':
 					if (!isGroup)return reply(mess.only.group)
