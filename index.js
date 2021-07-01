@@ -246,7 +246,7 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `Bienvenid@ @${num.split('@')[0]}\n Ahora eres un Destructor(a)!!!! Bienvenido a *${mdata.subject}* el mejor grupo de Pokémon Go 👉👈\n\nUn gusto conocerte mortal 😀\n\nOjito sigue las reglas del grupo si no, para fuera mortal, los admins te eliminan 🧐\n\nPara utilizar el bot registrate con el comando ${prefix}registro y tu nombre\n\nOjito con el spam 🧐\n\nby JuandelValle`
+				teks = `Bienvenid@ @${num.split('@')[0]}\n Ahora eres un Destructor(a)!!!! Bienvenido a *${mdata.subject}* el mejor grupo de Pokémon Go 👉👈\n\nUn gusto conocerte mortal 😀\n\nOjito sigue las reglas del grupo si no, para fuera mortal, los admins te eliminan 🧐\n\nOjito con el spam 🧐\n\nby JuandelValle`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
