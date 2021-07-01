@@ -1111,12 +1111,8 @@ async function starts() {
 				  reply(`Buena noche 🐷 fly`)
 				  }		
 
-		if (budy.includes(`fly`)) {
-				  reply(`🐷 fly*`)
-				  }
-
 		if (budy.includes(`Fly`)) {
-				  reply(`🐷 fly*`)
+				  reply(`🐷 Fly*`)
 				  }
 
 		if (budy.includes(`El bot sabe qué número va después del 12`)) {
