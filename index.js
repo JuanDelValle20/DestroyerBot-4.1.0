@@ -1008,19 +1008,19 @@ async function starts() {
                   }
 
 		if (budy.includes(`buenos días`)) {
-                  reply(`Buenos Dias 🐷 fly`)
+                  reply(`Buenos Dias 🐷 fly *UwU*`)
                   }
 
 		if (budy.includes(`Buenos dias`)) {
-				  reply(`Buenos Dias 🐷 fly`)
+				  reply(`Buenos Dias 🐷 fly *UwU*`)
 				  }
 
 		if (budy.includes(`buenos dias`)) {
-				  reply(`Buenos Dias 🐷 fly`)
+				  reply(`Buenos Dias 🐷 fly *UwU*`)
 				  }
 
 		if (budy.includes(`Buenos días`)) {
-				  reply(`Buenos Dias 🐷 fly`)
+				  reply(`Buenos Dias 🐷 fly *UwU*`)
 				  }
 
 		if (budy.includes(`bot malo`)) {
@@ -1032,15 +1032,15 @@ async function starts() {
 				  }
   
 		if (budy.includes(`gracias bot`)) {
-                  reply(`De nada 🐷 fly`)
+                  reply(`De nada 🐷 fly *UwU*`)
                   }
 
 		if (budy.includes(`hola`)) {
-                  reply(`Hola 🐷 fly`)
+                  reply(`Hola 🐷 fly *UwU*`)
                   }
 
 		if (budy.includes(`Hola`)) {
-				  reply(`Hola 🐷 fly`)
+				  reply(`Hola 🐷 fly *UwU*`)
 				  }
                  
 		if (budy.includes(`fua`)) {
@@ -1068,11 +1068,11 @@ async function starts() {
 				  }
 
 		if (budy.includes(`que hay bot`)) {
-				  reply(`lo mismo de siempre 🐷 fly`)
+				  reply(`lo mismo de siempre 🐷 fly *UwU*`)
 				  }
 
 		if (budy.includes(`qué hay bot`)) {
-				  reply(`lo mismo de siempre 🐷 fly`)
+				  reply(`lo mismo de siempre 🐷 fly *UwU*`)
 				  }				  
 
 		if (budy.includes(`como funciona el bot`)) {
@@ -1080,11 +1080,11 @@ async function starts() {
 				  }
 
 		if (budy.includes(`me salio shiny`)) {
-				  reply(`Flycidades 🐷 fly`)
+				  reply(`Flycidades 🐷 fly *UwU*`)
 				  }
 
 		if (budy.includes(`Me salió shiny`)) {
-				  reply(`Flycidades 🐷 fly`)
+				  reply(`Flycidades 🐷 fly *UwU*`)
 				  }
 
 		if (budy.includes(`ya estan los nidos`)) {
@@ -1104,15 +1104,19 @@ async function starts() {
 				  }
 
 		if (budy.includes(`buenas noches`)) {
-				  reply(`Buena noche 🐷 fly`)
+				  reply(`Buena noche 🐷 fly *UwU*`)
 				  }	
 
 		if (budy.includes(`Buenas noches`)) {
-				  reply(`Buena noche 🐷 fly`)
+				  reply(`Buena noche 🐷 fly *UwU*`)
 				  }		
 
-		if (budy.includes(`Fly`)) {
-				  reply(`🐷 Fly*`)
+		if (budy.includes(` Fly `)) {
+				  reply(`🐷 Fly* *UwU*`)
+				  }
+
+		if (budy.includes(`  fly  `)) {
+				  reply(`🐷 Fly* *UwU*`)
 				  }
 
 		if (budy.includes(`El bot sabe qué número va después del 12`)) {
